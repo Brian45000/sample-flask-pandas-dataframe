@@ -65,6 +65,7 @@ docker login -u brian45000
 docker tag flask-panda:latest brian45000/flask-panda
 docker push brian45000/flask-panda
 ```
+![DOCKER HUB](media/screens/dockerhub.png)
 
 ## Mise en place flask-panda-docker
 - Créer un nouvel item
