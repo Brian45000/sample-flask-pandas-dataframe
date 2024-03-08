@@ -58,3 +58,24 @@ EOF
 
 flask load-data titanic-min.csv
 ```
+
+## Page d'accueil jenkins
+![HOMEPAGE](/media/screens/homepage.png)
+
+## Commandes jenkins du docker run
+![DOCKER RUN JENKINS](/media/screens/commande_docker.png)
+
+## Shell du Jmeter
+![SHELL JMETER](/media/screens/jmeter_shell.png)
+
+## After build Jmeter
+![AFTER BUILD JMETER](/media/screens/jmeter_after_build.png)
+
+## Pipeline
+![PIPELINE](/media/screens/pipeline.png)
+
+## Webhook github
+![WEBHOOK GITHUB](/media/screens/webhook.png)
+
+## Goland
+![GOLAND](/media/screens/goland_jenkins.png)
