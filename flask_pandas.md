@@ -114,6 +114,8 @@ Ci-dessous, voici à quoi ressemble le fichier test sur jmeter qu'on ajoute à n
 
 Ici je vérifie que sur la route /data il n'y a pas de texte comprenant la chaîne de caractères "Rows = 0"
 Pour ceci, j'ai coché la case "Not" pour exclure "Rows = 0"
+Ce test je le sauvegarde, le nomme "flask_panda_test_plan.jmx" et le met à la racine du projet
+Ensuite, je fais un push du projet pour y intégrer ce test dans github.
 
 ## After build Jmeter
 ![AFTER BUILD JMETER](/media/screens/jmeter_after_build.png)
@@ -121,8 +123,17 @@ Pour ceci, j'ai coché la case "Not" pour exclure "Rows = 0"
 ## Pipeline
 ![PIPELINE](/media/screens/pipeline.png)
 
+Voici à quoi ressemble la pipeline.
+Une fois que flask-panda-docker a terminé de build l'application, c'est au tour de flask-panda-jmeter de prendre le relai et de réaliser les tests.
+
 ## Webhook github
 ![WEBHOOK GITHUB](/media/screens/webhook.png)
 
+Il faut crée un webhook sur le repository du github.
+Il pointe sur notre adresse publique, le port 32500 (Jenkins) et sur /github-webhook/ 
+et en Content-Type: application/json
+
 ## Goland
 ![GOLAND](/media/screens/goland_jenkins.png)
+
+Sur goland, on met à jour jenkins pour avoir tous nos build.
