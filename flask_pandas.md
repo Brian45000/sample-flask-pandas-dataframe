@@ -93,11 +93,27 @@ docker push brian45000/flask-panda
 ## Page d'accueil jenkins
 ![HOMEPAGE](/media/screens/homepage.png)
 
+Nous avons désormais nos 2 items pour notre projet flask-panda
+
 ## Commandes jenkins du docker run
 ![DOCKER RUN JENKINS](/media/screens/commande_docker.png)
 
+Actuellement les commandes sont en echo et commentés car il y a un souci avec jenkins et docker.
+Là pour l'exemple j'ai mis en echo quelques commandes.
+
 ## Shell du Jmeter
 ![SHELL JMETER](/media/screens/jmeter_shell.png)
+
+Cette commande permet de lancer des tests pour X utilisateurs et d'un délai de Y secondes. Ici on a 1 utilisateur pour 1 seconde.
+Le test va vérifier sur la page /data qu'il y a au moins 1 row de data.
+Ci-dessous, voici à quoi ressemble le fichier test sur jmeter qu'on ajoute à notre github sous forme jmx.
+
+## Tests JMETER
+![TEST 1 JMETER](/media/screens/test_1_jmeter.png)
+![TEST 2 JMETER](/media/screens/test_2_jmeter.png)
+
+Ici je vérifie que sur la route /data il n'y a pas de texte comprenant la chaîne de caractères "Rows = 0"
+Pour ceci, j'ai coché la case "Not" pour exclure "Rows = 0"
 
 ## After build Jmeter
 ![AFTER BUILD JMETER](/media/screens/jmeter_after_build.png)
